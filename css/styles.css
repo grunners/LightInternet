@@ -7160,8 +7160,16 @@ td.visible-print {
 /* Variables LESS */
 /* Mixins LESS */
 /* Default LESS */
+html,
+body {
+  height: 100%;
+}
 body {
   background-color: #ffffff;
+}
+#wrapper {
+  height: auto !important;
+  min-height: 100%;
 }
 .jumbotron h1 {
   color: #333333;
@@ -7180,3 +7188,6 @@ h2 {
 }
 /* Header LESS */
 /* Footer LESS */
+footer {
+  background: yellow;
+}

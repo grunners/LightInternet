@@ -10,7 +10,7 @@
     <title>Bootstrap 3 Template w/LESS</title>
 
     <!-- Bootstrap core CSS - compiled from LESS -->
-    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
@@ -26,7 +26,7 @@
   </head>
 
   <body>
-
+    <div id="wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -80,13 +80,24 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+    </div>
 
-      <hr>
+    <div id="push"></div>
+    </div><!--close wrapper-->
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <div class="container" style="">
+          <div class="row">
+            <div class="col-md-10">
+              <p>© Company name</p>
+            </div>
+            <div class="col-md-2">
+              <i class="fa fa-facebook-square" style="color:#3B5998;"></i><i class="fa fa-twitter-square" style="color:#3C93C9;"></i>
+            </div>
+          </div>
+        </div>
       </footer>
-    </div>
+    
 	
 
 
@@ -95,6 +106,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
+    <!--sticky responsive footer js-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var footerHeight = $("footer").height();
+      $("#wrapper").css("margin:", "0 auto " -footerHeight);
+      $("footer").css("height", footerHeight);
+      $("#push").css("height", footerHeight);
+    });
+    </script>
   </body>
 </html>
 
