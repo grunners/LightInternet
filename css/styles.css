@@ -7177,17 +7177,25 @@ body {
 h2 {
   color: #cccccc;
 }
+/* images */
+img.center {
+  display: block;
+  margin: 0 auto;
+}
 /* Navigation LESS */
+.navbar {
+  border-bottom: 2px solid #f9b233;
+}
 .navbar-inverse {
-  background-color: #428bca;
+  background-color: #cccccc;
 }
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #eeeeee;
+  color: #f39200;
 }
 /* Header LESS */
 /* Footer LESS */
 footer {
-  background: yellow;
+  background: #f39200;
 }
