@@ -13,19 +13,65 @@ body {
 	min-height: 100%;
 }
 
-.jumbotron h1 {
-	color: @headColorDark;
-	}
+.jumbotron {
+	height: 600px;
+	background: url(/images/treelight.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-	
-h2 {
-	color: @headColorLight;
-	}
 
+// text
+
+h1, h2, h3, h4, .clientName {
+	font-family: 'Lato', Arial, Helvetica;
+	color: #777;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.clientName {
+	font-size:1.4em;
+	padding:1em 0;
+}
+
+
+
+// text-align
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.middle {
+	text-align: center;
+}
 
 
 /* images */
 img.center {
 	display: block;
 	margin: 0 auto;
+}
+
+// client circles
+.clientCircle {
+	float:left;
+	clear: both;
+	height:200px;
+	width:200px;
+	background: #ccc;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
 }

@@ -7171,23 +7171,62 @@ body {
   height: auto !important;
   min-height: 100%;
 }
-.jumbotron h1 {
-  color: #333333;
+.jumbotron {
+  height: 600px;
+  background: url(/images/treelight.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-h2 {
-  color: #cccccc;
+h1,
+h2,
+h3,
+h4,
+.clientName {
+  font-family: 'Lato', Arial, Helvetica;
+  color: #777;
+}
+.bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
+.clientName {
+  font-size: 1.4em;
+  padding: 1em 0;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.middle {
+  text-align: center;
 }
 /* images */
 img.center {
   display: block;
   margin: 0 auto;
 }
+.clientCircle {
+  float: left;
+  clear: both;
+  height: 200px;
+  width: 200px;
+  background: #ccc;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+}
 /* Navigation LESS */
 .navbar {
-  border-bottom: 2px solid #f9b233;
+  border-bottom: 0;
 }
 .navbar-inverse {
-  background-color: #cccccc;
+  background-color: #f39200;
+  padding: 1em 0;
 }
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-brand:hover,
