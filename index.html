@@ -16,7 +16,6 @@
     <link href="css/starter-template.css" rel="stylesheet">
     
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -63,19 +62,19 @@
           <hr> 
         </div>
         <div class="col-md-6">
-          <div class="clientCircle"><i class="fa fa-external-link"></i> Red Sky Support</div>
+          <div class="clientCircle redsky"></div>
         </div>
         <div class="col-md-6">
-          <div class="clientCircle"><i class="fa fa-external-link"></i> Munro-Fawcett Photography</div>
+          <div class="clientCircle chaindrive"></div>
        </div>
       </div>
       
       <div class="row clientName">
         <div class="col-md-6">
-          <div class="clientCircle"><i class="fa fa-external-link"></i> Chain Drive</div>
+          <div class="clientCircle rmfowler"></div>
         </div>
         <div class="col-md-6">
-          <div class="clientCircle"><i class="fa fa-external-link"></i> RM Fowler</div>
+          <div class="clientCircle munrofawcett"></div>
         </div>
       </div>
     </div>
@@ -105,14 +104,25 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
-    <!--sticky responsive footer js-->
+    
     <script type="text/javascript">
     $(document).ready(function(){
+
+      //sticky responsive footer js
       var footerHeight = $("footer").height();
       $("#wrapper").css("margin:", "0 auto " -footerHeight);
       $("footer").css("height", footerHeight);
       $("footer").css("margin-top", -footerHeight-1)
       $("#push").css("height", footerHeight);
+
+      //client images
+      $(".clientCircle").hover(function(){
+        $(this).stop().animate({ opacity: 0.4 }, "fast"); //on mouse hover
+      }, function(){
+        $(this).stop().animate({ opacity: 1.0 }, "fast"); //on mouse out
+      });
+
+
     });
     </script>
   </body>

@@ -67,11 +67,37 @@ img.center {
 
 // client circles
 .clientCircle {
-	float:left;
+	display: block;
+	margin:0 auto;
 	clear: both;
-	height:200px;
-	width:200px;
+	height:@clientSize;
+	width:@clientSize;
 	background: #ccc;
-	-webkit-border-radius: 200px;
-	border-radius: 200px;
+	background-size: @clientSize !important;
+	-webkit-border-radius: @clientSize;
+	border-radius: @clientSize;
 }
+
+.clientCircle:hover {
+	/*opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+//clients
+.rmfowler {
+	background: url(/images/clients/rmfowler.jpg);
+}
+
+.chaindrive {
+	background: url(/images/clients/chaindrive.jpg);
+}
+
+.redsky {
+	background: url(/images/clients/redsky.jpg);
+}
+
+.munrofawcett {
+	background: url(/images/clients/munrofawcett.jpg);
+}
+
+
