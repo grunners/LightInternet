@@ -78,9 +78,23 @@ img.center {
 	border-radius: @clientSize;
 }
 
-.clientCircle:hover {
+
+.clientCircle a {
 	/*opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
+    display: none;
+    position: relative;
+    top: calc((@clientSize / 2) - (@clientLinkIcon / 2));
+    left: calc((@clientSize / 2) - (@clientLinkIcon / 2));
+}
+
+.clientCircle:hover a {
+	display: block;
+}
+
+.clientCircle i {
+	font-size: @clientLinkIcon;
+	color: @brandPrimary;
 }
 
 //clients

@@ -7222,9 +7222,20 @@ img.center {
   -webkit-border-radius: 250px;
   border-radius: 250px;
 }
-.clientCircle:hover {
+.clientCircle a {
   /*opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
+  display: none;
+  position: relative;
+  top: calc(75px);
+  left: calc(75px);
+}
+.clientCircle:hover a {
+  display: block;
+}
+.clientCircle i {
+  font-size: 100px;
+  color: #f39200;
 }
 .rmfowler {
   background: url(/images/clients/rmfowler.jpg);
