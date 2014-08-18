@@ -14,7 +14,7 @@ body {
 }
 
 .jumbotron {
-	height: 600px;
+	height: 500px;
 	background: url(/images/sunset.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -28,6 +28,27 @@ body {
 h1, h2, h3, h4, .clientName {
 	font-family: 'Lato', Arial, Helvetica;
 	color: #777;
+}
+
+.jumbotron h1{
+	line-height: 60px;
+	top:200px; //not working
+}
+
+.jumbotron h1 span {
+	color:#fff;
+	background-color: @brandPrimary;
+    font-size: 48px;
+    font-style: normal;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.jumbotron p span {
+	color:#fff;
+	background-color: #555;
+	line-height: 25px;
+	padding: 0 5px;
 }
 
 .bold {

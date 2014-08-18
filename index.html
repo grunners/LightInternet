@@ -50,7 +50,19 @@
     
     <div class="jumbotron">
       <div class="container">
-          <!-- Something -->
+          <div class="col-md-8">
+            <h1><span>Web Design &amp; Development</span>
+                <br>
+                <span>based in Leeds, UK</span>
+            </h1>
+            <p>
+              <span>Lorem ipsum dolor amet</span>
+              <br>
+              <span>tempor incididunt ut</span>
+              <br>
+              <span>veniam omnis</span>
+            </p> 
+          </div>
       </div>
     </div>
 
@@ -58,7 +70,7 @@
       <!-- Example row of columns -->
       <div class="row clientName">
         <div class="col-md-12">
-          <h1 class="middle">Some of our projects</h1>
+          <h2 class="middle">Some of our projects</h2>
           <hr> 
         </div>
         <div class="col-md-6">
@@ -82,18 +94,36 @@
     <div id="push"></div>
     </div><!--close wrapper-->
 
-      <footer>
-        <div class="container" style="">
+    <div id="footer">
+      <div id="footerMain">
+        <div class="container">
           <div class="row">
-            <div class="col-md-10">
-              <p>© Light Internet 2014</p>
+            <div class="col-md-4">
+              <h2>About Us</h2>
+              <p>In dolor sem, faucibus id odio nec, adipiscing blandit mauris. Maecenas condimentum molestie pellentesque.</p>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut congue tortor. Nullam semper diam nisi, nec tincidunt dui lobortis sit amet.</p>
             </div>
-            <div class="col-md-2">
-              <i class="fa fa-facebook-square" style="color:#3B5998;"></i><i class="fa fa-twitter-square" style="color:#3C93C9;"></i>
+            <div class="col-md-4">
+              <h2>Latest News</h2>
+              <p>Tweets?</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Get in touch</h2>
+              <p>info@lightinternet.co.uk</p>
+              <i class="fa fa-facebook-square"></i><i class="fa fa-twitter-square"></i>
             </div>
           </div>
         </div>
-      </footer>
+      </div><!-- close footer main -->
+      <div id="footerCopyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"><p>&copy; Light Internet 2014</p></div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div><!-- close copyright -->
+    </div><!-- close footer -->
     
 	
 
@@ -109,10 +139,10 @@
     $(document).ready(function(){
 
       //sticky responsive footer js
-      var footerHeight = $("footer").height();
+      var footerHeight = $("#footer").height();
       $("#wrapper").css("margin:", "0 auto " -footerHeight);
-      $("footer").css("height", footerHeight);
-      $("footer").css("margin-top", -footerHeight-1)
+      $("#footer").css("height", footerHeight);
+      $("#footer").css("margin-top", -footerHeight-1)
       $("#push").css("height", footerHeight);
 
       //client images
