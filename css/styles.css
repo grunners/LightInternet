@@ -7237,20 +7237,20 @@ img.center {
   display: block;
   margin: 0 auto;
   clear: both;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   background: #ccc;
-  background-size: 350px !important;
-  -webkit-border-radius: 350px;
-  border-radius: 350px;
+  background-size: 250px !important;
+  -webkit-border-radius: 250px;
+  border-radius: 250px;
 }
 .clientCircle a {
   /*opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
   display: none;
   position: relative;
-  top: calc(125px);
-  left: calc(125px);
+  top: calc(75px);
+  left: calc(75px);
 }
 .clientCircle:hover a {
   display: block;
