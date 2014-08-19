@@ -7301,10 +7301,14 @@ footer {
   font-size: 24px;
 }
 #footerCopyright p {
-  padding: 10px 0 10px 0;
+  padding: 25px 0 10px 0;
 }
 #footer i {
   font-size: 40px;
   float: right;
   padding: 5px 0 5px 10px;
+}
+#footerLogo {
+  float: right;
+  padding: 10px 0;
 }
