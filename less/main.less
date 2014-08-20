@@ -14,19 +14,22 @@ body {
 }
 
 .jumbotron {
-	height: 500px;
+	height: 904px;
 	background: url(/images/sunset.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-bottom: 1px solid #777;
     margin-bottom: 0 !important;
 }
 
 #callout {
-	background: #333;
+	background: #000;
 	color: #999;
+}
+
+#callout i {
+	font-size:10em;
 }
 
 
@@ -77,9 +80,19 @@ h2 {
 	font-style: italic;
 }
 
-.clientName {
+#portfolio {
 	font-size:1.4em;
 	padding:1em 0;
+	color:#fff;
+}
+
+#portfolio .row {
+	margin-bottom: 40px;
+}
+
+#portfolio p {
+	clear:both;
+	color:#777;
 }
 
 
@@ -106,13 +119,12 @@ img.center {
 
 // client circles
 .client {
-	display: block;
-	margin:0 auto;
+	float:left;
 	clear: both;
 	height:@clientSize;
 	width:@clientSize;
 	background-size: @clientSize !important;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	opacity: 0.75;
 }
 

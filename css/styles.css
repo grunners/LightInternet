@@ -7172,18 +7172,20 @@ body {
   min-height: 100%;
 }
 .jumbotron {
-  height: 500px;
+  height: 904px;
   background: url(/images/sunset.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-bottom: 1px solid #777;
   margin-bottom: 0 !important;
 }
 #callout {
-  background: #333;
+  background: #000;
   color: #999;
+}
+#callout i {
+  font-size: 10em;
 }
 h1,
 h2,
@@ -7223,9 +7225,17 @@ h2 {
 .italic {
   font-style: italic;
 }
-.clientName {
+#portfolio {
   font-size: 1.4em;
   padding: 1em 0;
+  color: #fff;
+}
+#portfolio .row {
+  margin-bottom: 40px;
+}
+#portfolio p {
+  clear: both;
+  color: #777;
 }
 .left {
   text-align: left;
@@ -7242,13 +7252,12 @@ img.center {
   margin: 0 auto;
 }
 .client {
-  display: block;
-  margin: 0 auto;
+  float: left;
   clear: both;
   height: 300px;
   width: 300px;
   background-size: 300px !important;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   opacity: 0.75;
 }
 .client a {
@@ -7306,10 +7315,9 @@ img.center {
 #footerCopyright {
   background: #1C1E21;
   color: #aaaaaa;
-  border-top: 1px solid #2f3238;
 }
 #footerMain h2 {
-  border-bottom: 1px solid #777;
+  border-bottom: 2px solid #f39200;
   padding-bottom: 5px;
   color: #777;
   font-size: 24px;
