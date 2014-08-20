@@ -21,6 +21,12 @@ body {
     -o-background-size: cover;
     background-size: cover;
     border-bottom: 1px solid #777;
+    margin-bottom: 0 !important;
+}
+
+#callout {
+	background: #333;
+	color: #999;
 }
 
 
@@ -59,6 +65,10 @@ h2 {
 	padding: 0 5px;
 }
 
+#callout h2 {
+	color: #777;
+}
+
 .bold {
 	font-weight: 700;
 }
@@ -95,20 +105,19 @@ img.center {
 }
 
 // client circles
-.clientCircle {
+.client {
 	display: block;
 	margin:0 auto;
 	clear: both;
 	height:@clientSize;
 	width:@clientSize;
-	background: #ccc;
 	background-size: @clientSize !important;
-	-webkit-border-radius: @clientSize;
-	border-radius: @clientSize;
+	margin-bottom: 20px;
+	opacity: 0.75;
 }
 
 
-.clientCircle a {
+.client a {
 	/*opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
     display: none;
@@ -117,11 +126,11 @@ img.center {
     left: calc((@clientSize / 2) - (@clientLinkIcon / 2));
 }
 
-.clientCircle:hover a {
+.client:hover a {
 	display: block;
 }
 
-.clientCircle i {
+.client i {
 	font-size: @clientLinkIcon;
 	color: @brandPrimary;
 }
@@ -141,6 +150,14 @@ img.center {
 
 .munrofawcett {
 	background: url(/images/clients/munrofawcett.jpg);
+}
+
+.wisecash {
+	background: url(/images/clients/wisecash.jpg);
+}
+
+.cash4unow {
+	background: url(/images/clients/cash4unow.jpg);
 }
 
 
