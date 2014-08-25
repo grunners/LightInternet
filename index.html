@@ -121,7 +121,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <h2>About Us</h2>
+              <h2>A Section</h2>
               <p>In dolor sem, faucibus id odio nec, adipiscing blandit mauris. Maecenas condimentum molestie pellentesque.</p>
               <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut congue tortor. Nullam semper diam nisi, nec tincidunt dui lobortis sit amet.</p>
             </div>
@@ -174,6 +174,12 @@
         $(this).stop().animate({ opacity: 0.75 }, "fast"); //on mouse out
       });
 
+      //iOs background fix
+      var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+      if(iOS){
+        var screenHeight = $(window).height();
+        $(".jumbotron").css('height', screenHeight);
+      }
 
     });
     </script>
