@@ -2,76 +2,71 @@
 
 html, body {
 	height: 100%;
+	background:center no-repeat fixed url('/images/sunset.png');
+	background-size: cover;
 }
 
 body {
-	background-color:@defaultThemeColor;
-	}
+	//padding-top: 50px;
+	//position: relative;
+}
 
 #wrapper {
 	height: auto !important;
 	min-height: 100%;
 }
 
-.jumbotron {
-	height:100vh;
-	background: url(/images/traffic2.jpg) no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 0 !important;
-    display: block;
+section {
+	//padding-top:70px;  
+    //padding-bottom:50px;
+    height: 100vh;
 }
 
-#callout {
-	background: #000;
-	color: #999;
+.vert-middle {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    height: 50%;
+    margin: auto;
+    overflow: visible;
+    position: absolute;
 }
 
-#callout i {
-	font-size:10em;
+#main {
+	background-color: rgba(0,0,0,0.7);
+	color:#fff;
 }
+
+#clients {
+	background-color: #fff;
+
+	h1 {
+		padding: 30px 0;
+		color: @brandColor;
+	}
+}
+
 
 
 // text
 
-h1, h2, h3, h4, p, .clientName {
-	font-family: 'Titillium Web', Arial, Helvetica;
+h1, h2, h3, h4, p {
+	
 }
 
 h1 {
-
+	font-family: 'Kreon', Arial, Helvetica;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	font-size: 68px;
 }
 
 h2 {
-	color:#777;
-}
-
-.jumbotron h1{
-	line-height: 75px;
-	position: relative;
-	top:0px; //use this for positioning text
-}
-
-.jumbotron h1 span {
+	font-family: 'Lato', Arial, Helvetica;
 	color:#fff;
-	background-color: @brandPrimary;
-    font-size: 48px;
-    font-style: normal;
-    padding: 0 5px;
-    text-transform: uppercase;
-}
-
-.jumbotron p span {
-	color:#fff;
-	background-color: #555;
-	line-height: 40px;
-	padding: 0 5px;
-}
-
-#callout h2 {
-	color: #777;
+	text-align: center;
 }
 
 .bold {
@@ -82,28 +77,8 @@ h2 {
 	font-style: italic;
 }
 
-#portfolio {
-	font-size:1.4em;
-	padding:1em 0;
-	color:#fff;
-}
-
-#portfolio .row {
-	margin-bottom: 40px;
-}
-
-#portfolio p {
-	clear:both;
-	color:#777;
-}
-
-
 
 // text-align
-.left {
-	text-align: left;
-}
-
 .right {
 	text-align: right;
 }
@@ -114,64 +89,10 @@ h2 {
 
 
 /* images */
-img.center {
+img.middle {
 	display: block;
 	margin: 0 auto;
 }
 
-// client circles
-.client {
-	float:left;
-	clear: both;
-	height:@clientSize;
-	width:@clientSize;
-	background-size: @clientSize !important;
-	margin-bottom: 10px;
-	opacity: 0.75;
-}
-
-
-.client a {
-	/*opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
-    display: none;
-    position: relative;
-    top: calc((@clientSize / 2) - (@clientLinkIcon / 2));
-    left: calc((@clientSize / 2) - (@clientLinkIcon / 2));
-}
-
-.client:hover a {
-	display: block;
-}
-
-.client i {
-	font-size: @clientLinkIcon;
-	color: @brandPrimary;
-}
-
-//clients
-.rmfowler {
-	background: url(/images/clients/rmfowler.jpg);
-}
-
-.chaindrive {
-	background: url(/images/clients/chaindrive.jpg);
-}
-
-.redsky {
-	background: url(/images/clients/redsky.jpg);
-}
-
-.munrofawcett {
-	background: url(/images/clients/munrofawcett.jpg);
-}
-
-.wisecash {
-	background: url(/images/clients/wisecash.jpg);
-}
-
-.cash4unow {
-	background: url(/images/clients/cash4unow.jpg);
-}
 
 
