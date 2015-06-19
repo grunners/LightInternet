@@ -3,12 +3,21 @@
 html, body {
 	height: 100%;
 	background:center no-repeat fixed url('/images/sunset.png');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 	background-size: cover;
 }
 
 body {
 	//padding-top: 50px;
 	//position: relative;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    html, body {
+        background-attachment:scroll;
+    }
 }
 
 #wrapper {
@@ -34,17 +43,30 @@ section {
 }
 
 #main {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.6);
 	color:#fff;
+
+	button {
+		display: block;
+		margin: 40px auto;
+		padding: 1em 3em;
+		background: @brandColor;
+		border:1px solid darken(@brandColor, 20%);
+	}
 }
 
 #clients {
-	background-color: #fff;
+	background-color: @brandColor;
 
 	h1 {
 		padding: 30px 0;
-		color: @brandColor;
+		color: #fff;
+		font-size: 50px;
 	}
+}
+
+#contact {
+	background:center no-repeat fixed url('/images/traffic.jpg');
 }
 
 
@@ -56,10 +78,10 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-	font-family: 'Kreon', Arial, Helvetica;
+	font-family: 'Lobster Two', Arial, Helvetica;
 	color: #fff;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 68px;
 }
 
@@ -79,19 +101,20 @@ h2 {
 
 
 // text-align
-.right {
+.right-text {
 	text-align: right;
 }
 
-.middle {
+.center-text {
 	text-align: center;
 }
 
 
 /* images */
-img.middle {
+.middle img {
 	display: block;
 	margin: 0 auto;
+	//max-width: 100%;
 }
 
 
