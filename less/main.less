@@ -2,7 +2,7 @@
 
 html, body {
 	height: 100%;
-	background:center no-repeat fixed url('/images/sunset.png');
+	background:center no-repeat fixed url('/images/traffic.jpg');
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,7 +28,7 @@ body {
 section {
 	//padding-top:70px;  
     //padding-bottom:50px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .vert-middle {
@@ -42,19 +42,25 @@ section {
     position: absolute;
 }
 
+//Main section
 #main {
 	background-color: rgba(0,0,0,0.6);
 	color:#fff;
 
-	button {
-		display: block;
-		margin: 40px auto;
+	.btn {
+		margin: 40px 0;
 		padding: 1em 3em;
 		background: @brandColor;
 		border:1px solid darken(@brandColor, 20%);
+		text-align: center;
+	}
+
+	.link {
+		text-align: center;
 	}
 }
 
+//Portfolio
 #clients {
 	background-color: @brandColor;
 
@@ -63,18 +69,31 @@ section {
 		color: #fff;
 		font-size: 50px;
 	}
+
+	.btn {
+		margin: 40px 0;
+		padding: 1em 3em;
+		background: @brandColor;
+		border:1px solid darken(@brandColor, 20%);
+		text-align: center;
+	}
+
+	.link {
+		text-align: center;
+	}
 }
 
+//Contact section
 #contact {
-	background:center no-repeat fixed url('/images/traffic.jpg');
+	background-color: rgba(0,0,0,0.8);
 }
 
 
 
 // text
 
-h1, h2, h3, h4, p {
-	
+h2, h3, h4, p {
+	font-family: 'Lato', Arial, Helvetica;
 }
 
 h1 {
@@ -86,7 +105,6 @@ h1 {
 }
 
 h2 {
-	font-family: 'Lato', Arial, Helvetica;
 	color:#fff;
 	text-align: center;
 }
@@ -114,7 +132,7 @@ h2 {
 .middle img {
 	display: block;
 	margin: 0 auto;
-	//max-width: 100%;
+	max-width: 100%;
 }
 
 

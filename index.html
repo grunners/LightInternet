@@ -41,7 +41,9 @@
             <div class="col-md-12 vert-middle middle">
               <h1>Light Internet</h1>
               <h2>Web Design &amp; Development</h2>
-              <button class="btn btn-primary btn-lg">View Our Work</button>
+              <div class="link">
+                <a class="btn btn-primary btn-lg" href="#clients">View Our Work</a>
+              </div>
             </div>
           </div>
         </div>
@@ -54,9 +56,28 @@
             <div class="col-md-12">
               <h1>Recent Work</h1>
               <div class="row middle">
-                <div class="col-md-4"><img src="http://placehold.it/200x200" alt=""></div>
-                <div class="col-md-4"><img src="http://placehold.it/200x200" alt=""></div>
-                <div class="col-md-4"><img src="http://placehold.it/200x200" alt=""></div>
+                <div class="col-sm-4">
+                  <img src="/images/clients/rmfowler.png" alt="">
+                  <h2>RM Fowler</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
+                </div>
+                <div class="col-sm-4">
+                  <img src="/images/clients/redskysupport.png" alt="">
+                  <h2>Red Sky Support</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
+                </div>
+                <div class="col-sm-4">
+                  <img src="/images/clients/chaindrive.png" alt="">
+                  <h2>Chain Drive</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="link">
+                    <a class="btn btn-primary btn-lg" href="#contact">Get In Touch</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,7 +129,7 @@
       var footerHeight = $("footer").height();
       $("#wrapper").css("margin:", "0 auto " -footerHeight);
       $("footer").css("height", footerHeight);
-      $("footer").css("margin-top", -footerHeight-1)
+      $("footer").css("margin-top", -footerHeight)
       $("#push").css("height", footerHeight);
 
     });
