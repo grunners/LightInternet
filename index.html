@@ -17,7 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 
@@ -54,22 +54,20 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1>Recent Work</h1>
+            <h2>Latest Work</h2>
+            <div class="code">
+              <i class="fa fa-desktop"></i>
+            </div>
+              
               <div class="row middle">
                 <div class="col-sm-4">
                   <img src="/images/clients/rmfowler.png" alt="">
-                  <h2>RM Fowler</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
                 </div>
                 <div class="col-sm-4">
                   <img src="/images/clients/redskysupport.png" alt="">
-                  <h2>Red Sky Support</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
                 </div>
                 <div class="col-sm-4">
                   <img src="/images/clients/chaindrive.png" alt="">
-                  <h2>Chain Drive</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium sit sint velit similique ipsum perferendis illum adipisci repellendus, qui excepturi consequuntur, tempora quaerat? Cum molestiae ipsam ea dolorem voluptate.</p>
                 </div>
               </div>
               <div class="row">
@@ -87,9 +85,30 @@
       <section id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <h1>Contact Us</h1>
-              contact form
+            <div class="col-sm-6 col-sm-push-3">
+              <h2>Contact Us</h2>
+              <div class="code">
+                <i class="fa fa-paper-plane"></i>
+              </div>
+              <form id="form" data-toggle="validator" role="form" data-disable="false">
+                <div class="form-group">
+                  <input id="txtName" name="txtName" type="text" class="form-control" placeholder="Your name" data-error="Please provide your name" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <input id="txtTel" name="txtTel" type="text" class="form-control" placeholder="Your number" data-error="Please provide a telephone number" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <input id="txtEnquiry" name="txtEnquiry" type="text" class="form-control" placeholder="Your message" data-error="Please provide a message" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="link">
+                  <a class="btn btn-primary btn-lg" href="#">Send Enquiry</a>
+                </div>
+                <div id="contact-results"></div>
+              </form>
+
             </div>
           </div>
         </div>
