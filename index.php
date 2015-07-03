@@ -105,7 +105,7 @@
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="link">
-                  <a class="btn btn-primary btn-lg" href="#">Send Enquiry</a>
+                  <button type="submit" class="btn btn-primary" name="btnSubmit" id="btnSubmit" >Send Enquiry</button>
                 </div>
                 <div id="contact-results"></div>
               </form>
@@ -141,7 +141,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/js/jquery.easing.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-
+    <script src="/js/validator.js"></script>
     
     <script type="text/javascript">
     $(document).ready(function(){
@@ -167,6 +167,34 @@
           scrollTop: $("#contact").offset().top
         }, 1000, 'easeInOutExpo');
         event.preventDefault();
+      });
+
+      //contact form
+      $('#form').validator().on('submit', function (e) {
+        
+        if (!e.isDefaultPrevented()) {
+
+          //disable default behaviour first
+          e.preventDefault();
+          //then post
+          post_data = {
+              'txtName' : $('input[name=txtName]').val(),
+              'txtTel' : $('input[name=txtTel]').val(),
+              'txtEnquiry' : $('input[name=txtEnquiry]').val()
+          };
+         
+          //Ajax post data to server
+          $.post('/includes/mail.php', post_data, function(response){  
+              if(response.type == 'error'){ //load json data from server and output message    
+                  output = '<div class="alert alert-danger">' + response.text + '</div>';
+              }else{
+                  output = '<div class="alert alert-success">' + response.text + '</div>';
+                  //disable the submit button
+                  $('#btnSubmit').attr('disabled','disabled');
+              }
+              $("#form #contact-results").hide().html(output).fadeIn();
+          }, 'json');
+        }
       });
 
     });
