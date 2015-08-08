@@ -39,7 +39,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 vert-middle middle">
-              <h1>ajgweb.com</h1>
+              <h1>AJG Web</h1>
               <h2>Web Design &amp; Development</h2>
               <div class="link">
                 <a id="btnClients" class="btn btn-primary btn-lg" href="#clients">View My Work</a>
