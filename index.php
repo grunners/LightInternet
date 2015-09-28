@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home | AJG Web</title>
+    <title>Light Internet</title>
 
     <!-- Bootstrap core CSS - compiled from LESS -->
     <link href="css/styles.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 vert-middle middle">
-              <h1>AJG Web</h1>
+              <h1>Light Internet</h1>
               <h2>Web Design &amp; Development</h2>
               <div class="link">
                 <a id="btnClients" class="btn btn-primary btn-lg" href="#clients">View My Work</a>
