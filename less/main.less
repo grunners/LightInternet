@@ -66,7 +66,7 @@ section {
 
 //Contact section
 #contact {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.85);
 
 	h2 {
 		padding: 1em 0;
@@ -92,16 +92,16 @@ h2, h3, h4, p {
 }
 
 h1 {
-	font-family: 'Merriweather', Arial, Helvetica;
+	font-family: 'Lobster Two', Arial, Helvetica;
 	color: #fff;
 	text-align: center;
-	font-weight: 900;
+	font-weight: 400;
 	font-size: 68px;
 	font-style: italic;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 24px;
 	font-weight: 900;
 	color:#fff;
 	text-align: center;
@@ -141,13 +141,18 @@ h2 {
 	text-align: center;
 }
 
-.btn {
+.btn, .btn:active, .btn:focus {
 	margin: 40px 0;
 	padding: 1em 3em;
 	background: transparent;
 	border:1px solid #fff;
 	border-radius: 0;
 	text-align: center;
+}
+
+.btn:hover {
+	background: #333;
+	border:1px solid #555;
 }
 
 // images

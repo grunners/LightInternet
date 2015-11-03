@@ -7,19 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Light Internet</title>
+    <title>Light Internet - Web Design and Development, Leeds, UK</title>
 
     <!-- Bootstrap core CSS - compiled from LESS -->
     <link href="css/styles.min.css" rel="stylesheet">
     
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic,300,300italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,7 +37,7 @@
               <h1>Light Internet</h1>
               <h2>Web Design &amp; Development</h2>
               <div class="link">
-                <a id="btnClients" class="btn btn-primary btn-lg" href="#clients">View My Work</a>
+                <a id="btnContact" class="btn btn-primary btn-lg" href="#contact">Need a Website?</a>
               </div>
             </div>
           </div>
@@ -50,14 +45,11 @@
       </section>
 
       <!-- clients -->
-      <section id="clients">
+<!--       <section id="clients">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
             <h2>Latest Projects</h2>
-            <!-- <div class="code">
-              <i class="fa fa-desktop"></i>
-            </div> -->
               
               <div class="row middle">
                 <div class="col-sm-4">
@@ -81,7 +73,7 @@
           </div>
         </div>
       </section>
-
+ -->
       <section id="contact">
         <div class="container">
           <div class="row">
@@ -124,8 +116,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 center-text">
-              <p>&copy; AJG Web 2015</p>
-              <p><a href="mailto:info@lightinternet.co.uk">info@ajgweb.co.uk</a></p>
+              <p>&copy; Light Internet 2015</p>
+              <p><a href="mailto:adrian@lightinternet.co.uk">adrian@lightinternet.co.uk</a></p>
             </div>
           </div>
         </div>
@@ -154,14 +146,6 @@
       $("#push").css("height", footerHeight);
 
       //scroll to clients
-      $("#btnClients").bind('click', function (event) {
-        $('html, body').animate({
-          scrollTop: $("#clients").offset().top
-        }, 1000, 'easeInOutExpo');
-        event.preventDefault();
-      });
-
-      //scroll to contact
       $("#btnContact").bind('click', function (event) {
         $('html, body').animate({
           scrollTop: $("#contact").offset().top

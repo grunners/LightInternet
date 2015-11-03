@@ -2,8 +2,9 @@
 if($_POST)
 {
    	//set company variables
-	$companyname = "ajgweb";
-	$companyemail = "info@ajgweb.co.uk";
+	$companyname = "Light Internet";
+	$companyemail = "info@lightinternet.co.uk";
+    $subject = "Contact Request";
     //*********************************
 
     //check if its an ajax request, exit if not
@@ -53,7 +54,7 @@ if($_POST)
     }
    
     //email body
-    $message_body = $Enquiry."\r\n\r\n-".$Name."\r\n<br>Tel: ".$Tel ;
+    $message_body = $Enquiry."\r\n\r\n<br>".$Name."\r\n<br>Tel: ".$Tel ;
    
     //proceed with PHP email.
     $headers = "MIME-Version: 1.0" . "\r\n";
@@ -61,7 +62,7 @@ if($_POST)
     $headers .= "From: " . $companyname . " <" . $companyemail . ">" . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
    
-    $send_mail = mail("grunners22@hotmail.com", $subject, $message_body, $headers);
+    $send_mail = mail("adrian@lightinternet.co.uk", $subject, $message_body, $headers);
    
     if(!$send_mail)
     {
